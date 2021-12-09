@@ -1,6 +1,5 @@
 .body, html {
-    max-width: 1400px;
-    display:block;
+    display:flow-root;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 15px;
@@ -26,7 +25,6 @@
     -ms-flex-align: center;
             align-items: center;
     display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
 }
 .content-header {
@@ -34,21 +32,20 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
             justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-wrap: wrap;
     display: flex;
-    margin: 15px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     border-radius: 10px;
+    margin: 15px;
 }
 .navbar-nav {
-    max-width: auto;
+   
     -webkit-box-pack: center;
     -ms-flex-pack: center;
             justify-content: center;
     display: -webkit-box;
-    display: -ms-flexbox;
+    
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
@@ -65,7 +62,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     display:-webkit-box;
-    display:-ms-flexbox;
+   
     display:flex;
     margin: 15px;
     text-align: left;
@@ -74,7 +71,7 @@
 }
 .btn-group {
     display:-webkit-box;
-    display:-ms-flexbox;
+   
     display:flex;
     font-family:sans-serif;
 }
@@ -147,4 +144,11 @@ ul.breadcrumb li a:hover {
 }
 .map {
     text-align: center;
+}
+.hr-line {
+	margin: 10px 150px 10px 150px;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px solid rgb(0, 0, 0);
 }
